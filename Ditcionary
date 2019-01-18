@@ -1,0 +1,53 @@
+'''
+definitions of formulas/functions
+'''
+
+def fibon_sequence(n):
+    x = 1
+    y = 1
+    z = 1
+    cont = 1  # cont = 'c'
+    while cont <= n - 1:
+        print(x + y)
+        z = x
+        x = y
+        y = y + z
+
+        cont = cont + 1
+    print("Fibonacci number is ", x + y)
+
+
+
+
+
+def convert_list_to_word(alist):
+
+    new_word = ""
+
+    n = len(alist)
+    for i in range(n):
+        new_word = new_word + alist[i]
+
+    return new_word
+
+
+
+
+
+def elim_repeats(old_list):
+    new_list = []
+    for letter in old_list:
+        if letter not in new_list:
+            new_list.append(letter)
+
+    return new_list
+
+
+
+def translate(text1,dict1):
+    list_text1 = text1.split()
+    new_text =[]
+    for word in list_text1:
+        translation = dict1.get(word)
+        new_text.append(translation if translation else word)
+    return' '.join(new_text)
