@@ -1,5 +1,7 @@
 """
-Documentation
+Gerardo Rivera
+11/7/2018
+number guessing game
 """
 
 import random
