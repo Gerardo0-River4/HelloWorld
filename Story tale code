@@ -1,0 +1,22 @@
+from gerardolib import translate
+from fairyTaleText import text
+
+
+mynewdict = {"fish":input("Enter a new word for fish")}
+new_text = translate(text, mynewdict).split(".")
+for sentence in new_text:
+    print(sentence, end= ".\n")
+    
+##############
+    
+    text = "A king's son set out to see a battle, where every animal fought; " \
+       "he promised to bring back to his father the news of who would be the king of the animals that year." \
+       " He arrived when the fight was almost over, but a snake and a raven still fought. He cut off the head of the snake. " \
+       "The raven, in gratitude, flew him to a castle where his sister lived, and the prince spent the night there. The raven then flew to another castle, where he also spent the night, but the next morning he met a handsome youth, who had been the enchanted raven. " \
+       "The youth gave him a bundle and warned him not to open it until he was in the place where he most wanted to be." \
+       "The giant raised him. One day, he heard music and found the giant's daughter. She told him the next day the giant would ask him to marry one of her two older sisters, but she wanted him to insist on her, because she did not like the bridegroom he wanted for her. " \
+       "The prince asked, but the annoyed giant demanded that he clean out the byre, or he would not get his youngest but be killed. He started to clean. The daughter came by at noon, and the prince fell asleep, but the byre was clean when he woke. The giant knew he did not clean it, but set him to thatch it with birds' down. The prince tried to hunt the birds. At noon, the daughter put him to sleep again, and the roofs were thatched with feathers when he woke. The giant knew he had not done it, and set him to fetch down a bird's nest. He tried to climb it and got no more than half way. " \
+       "The daughter built him a ladder of her fingers, and when he got it down, she left her little finger in the tree." \
+       ""
+
+################
